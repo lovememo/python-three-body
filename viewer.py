@@ -35,7 +35,7 @@ class Viewer(object):
         """ 初始化窗口并注册渲染函数 """
         glutInit()
         glutInitWindowSize(640, 480)
-        glutCreateWindow("3D Modeller")
+        glutCreateWindow("python-three-body by lovememo")
         glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB)
         #注册窗口渲染函数
         glutDisplayFunc(self.render)
@@ -128,7 +128,7 @@ class Viewer(object):
         #设置球体的颜色
         sphere_node.color_index = 2
         sphere_node.translate(2,2,0)
-        sphere_node.scale(4)
+        sphere_node.scale(12)
         #将球体放进场景中，默认在正中央
         self.scene.add_node(sphere_node)
 
